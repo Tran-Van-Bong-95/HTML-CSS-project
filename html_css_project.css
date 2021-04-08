@@ -1,0 +1,96 @@
+/* general */
+/* *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* *, ::after, ::before áp dụng cho toàn thể screen 
+phía trước và sau body như vậy toàn bộ  content sẽ nằm trong 1 hộp không tràn ra ngoài 
+dù cho padding hay margin thì kích thước của box ở đây là screen sẽ không bị thay đổi   */
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  word-spacing: 2px;
+}
+
+.slider {
+  width: 85vw;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+  padding: 1rem 0;
+  /* set relative for buttons */
+  position: relative;
+}
+
+.slide-container {
+  /* display: flex; */
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  margin: 10px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  top: 30vh;
+  background: grey;
+  border-radius: 20%;
+}
+
+.next-btn {
+  left: -3rem;
+}
+
+.pre-btn {
+  right: -3rem;
+}
+
+.quote-icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: blue;
+  margin-top: 25px;
+}
+
+p {
+  text-align: center;
+  color: grey;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: white;
+  border: solid 3px green;
+  object-fit: cover;
+  margin-top: 2rem;
+}
