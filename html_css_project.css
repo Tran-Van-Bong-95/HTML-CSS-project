@@ -6,9 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 } */
-/* *, ::after, ::before áp dụng cho toàn thể screen 
-phía trước và sau body như vậy toàn bộ  content sẽ nằm trong 1 hộp không tràn ra ngoài 
-dù cho padding hay margin thì kích thước của box ở đây là screen sẽ không bị thay đổi   */
 
 body {
   font-family: var(--ff-secondary);
